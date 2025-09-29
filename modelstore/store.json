@@ -1,0 +1,21 @@
+{
+    "currentPostfix": 1,
+    "models": [
+        {
+            "name": "LangDev25-Demo",
+            "folder": "LangDev25-Demo",
+            "language": "ScopingExample",
+            "version": "1",
+            "units": [
+                {
+                    "name": "Unit1",
+                    "file": "Unit1.json"
+                },
+                {
+                    "name": "MathFunctions",
+                    "file": "MathFunctions.json"
+                }
+            ]
+        }
+    ]
+}

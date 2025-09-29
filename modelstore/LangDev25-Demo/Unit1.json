@@ -1,0 +1,50 @@
+{
+   "serializationFormatVersion": "2023.1",
+   "languages": [
+      {
+         "key": "-key-ScopingExample",
+         "version": "2023.1"
+      }
+   ],
+   "nodes": [
+      {
+         "id": "ID-2",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Module"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-name"
+               },
+               "value": "Unit1"
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-globals"
+               },
+               "children": []
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-blocks"
+               },
+               "children": []
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": null
+      }
+   ]
+}
