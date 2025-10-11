@@ -8,30 +8,44 @@ modelunit Module {
     name: identifier;
     globals: Variable[];
     blocks: Block[];
-    check: VariableRef;
+    check1: SimpleVarRef;
+    qualName: QualifiedRef;  /* needed for step 3 */
 }
 
 concept Block {
     name: identifier;
     blockVariables: Variable[];
-    private functions: Function[];
-    check: VariableRef;
+    functions: Function[];
+    reference importedBlocks: Block; /* needed for step 2 */
+    private privateVariables: Variable[]; /* needed for step 5 */
+    check1: SimpleVarRef;
+    reference check: Function;
 }
 
 concept Function {
     name: identifier;
     comment: string;
     parameters: Variable[];
-    check: VariableRef;
+    check1: SimpleVarRef;
 }
 
 concept Variable {
     name: identifier;
 }
 
-abstract expression VariableRef {
+expression QualifiedRef { /* needed for step 3 */
+    target: VariableRef;
+    reference block: Block;
+}
+
+abstract expression VariableRef { /* needed for step 3 */
+}
+
+expression FunctionRef base VariableRef { /* needed for step 3 */
+    target: VariableRef;
+    reference func: Function;
 }
 
 expression SimpleVarRef base VariableRef {
-    reference target: Variable;
+    reference variable: Variable;
 }

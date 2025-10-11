@@ -8,12 +8,16 @@
             "version": "1",
             "units": [
                 {
-                    "name": "Unit1",
-                    "file": "Unit1.json"
+                    "name": "Module1",
+                    "file": "Module1.json"
                 },
                 {
-                    "name": "MathFunctions",
-                    "file": "MathFunctions.json"
+                    "name": "Module2",
+                    "file": "Module2.json"
+                },
+                {
+                    "name": "Unit1",
+                    "file": "Unit1.json"
                 }
             ]
         }

@@ -1,6 +1,6 @@
 {
   "name": "@freon4dsl/samples-scoping-example",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -29,6 +29,8 @@
     "@tailwindcss/cli": "^4.1.10",
     "@tailwindcss/vite": "^4.1.10",
     "@tsconfig/svelte": "^5.0.4",
+    "@lucide/svelte": "^0.545.0",
+    "bits-ui": "^2.11.4",
     "cross-env": "7.0.3",
     "svelte-check": "^4.1.5",
     "svelte-preprocess": "^6.0.3",
@@ -37,11 +39,11 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@freon4dsl/core": "2.0.0-beta.4",
-    "@freon4dsl/core-svelte": "2.0.0-beta.4",
-    "@freon4dsl/meta": "2.0.0-beta.4",
-    "@freon4dsl/server": "2.0.0-beta.4",
-    "@freon4dsl/weblib-flowbite": "2.0.0-beta.4",
+    "@freon4dsl/core": "2.0.0-beta.5",
+    "@freon4dsl/core-svelte": "2.0.0-beta.5",
+    "@freon4dsl/meta": "2.0.0-beta.5",
+    "@freon4dsl/server": "2.0.0-beta.5",
+    "@freon4dsl/weblib-flowbite": "2.0.0-beta.5",
     "@types/node": "^20.14.1",
     "kotlin": "^1.5.21",
     "lodash": "^4.17.21",

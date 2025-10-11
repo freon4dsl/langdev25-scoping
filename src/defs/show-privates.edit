@@ -1,0 +1,15 @@
+editor showPrivates
+
+Block {[
+    block ${name} imports ${importedBlocks} {
+        block variables: \[ ${blockVariables horizontal separator[,]} \]
+        PRIVATE variables:  \[ ${privateVariables horizontal separator[,]} \]
+
+        ${functions replace=ExternalAccordion nrOpen="single" conceptName="Function"}
+    }
+
+    [fragment vis3]
+]
+fragment vis3 [VARIABLES VISIBLE IN BLOCK: ${check1} FUNCTIONS VISIBLE IN BLOCK: ${check}]
+}
+

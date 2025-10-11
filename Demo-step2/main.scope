@@ -1,12 +1,4 @@
+/* Scope file for Step 2 of the demo: showing namespaces */
 scoper for language ScopingExample
 
-isNamespace { Block, Function }
-
-/* step 0: show the model without scoper */
-/* step 1a: add Block as Namespace and show what can be referenced in various places */
-/* step 1b: add Function as Namespace and show what can be referenced in various places */
-
-/* step 2: show imports */
-Block {
-    imports { self.imports; }
-}
+isNamespace { Module, Block, Function }

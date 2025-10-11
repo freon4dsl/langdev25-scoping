@@ -1,34 +1,61 @@
 editor default
 
+global {
+    external {
+        ExternalAccordion
+    }
+}
 
 Module {[
     module ${name} {
         globals: \[ ${globals horizontal separator[,]} \]
-        CHECK IT OUT: ${check}
-        ${blocks vertical}
+        ${blocks replace=ExternalAccordion nrOpen="single" conceptName="Block"}
+        A QUALIFIED NAME: ${qualName}
     }
-]}
+    [fragment vis]
+]
+fragment vis [VARIABLES VISIBLE IN MODULE: ${check1}]
+}
 
 Block {[
-    block ${name} {
+    block ${name} imports ${importedBlocks} {
         block variables: \[ ${blockVariables horizontal separator[,]} \]
-        CHECK IT OUT: ${check}
-        ${functions vertical}
+
+        ${functions replace=ExternalAccordion nrOpen="single" conceptName="Function"}
     }
-]}
+
+    [fragment vis]
+]
+fragment vis [VARIABLES VISIBLE IN BLOCK: ${check1} FUNCTIONS VISIBLE IN BLOCK: ${check}]
+}
 
 Function {[
-    function ${name} ( ${parameters horizontal separator[,]} ) {
-        CHECK IT OUT: ${check}
+    function ${name} ( ${parameters horizontal separator[,]} {
     }
-]}
+    [fragment vis]
+]
+fragment vis [VARIABLES VISIBLE IN FUNCTION: ${check1}]
+}
 
 Variable {[
     ${name}
 ]}
 
-SimpleVarRef {[
-    ${target}
+/* added for step 3, note the reference shortcut */
+QualifiedRef {[
+    ${block} . ${target}
 ]
-referenceShortcut = ${target}
+referenceShortcut = ${block}
+}
+
+FunctionRef {[
+    ${func} . ${target}
+]
+referenceShortcut = ${func}
+}
+
+SimpleVarRef {[
+    ${variable}
+]
+referenceShortcut = ${variable}
 }

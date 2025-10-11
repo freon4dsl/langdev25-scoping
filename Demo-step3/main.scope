@@ -1,20 +1,8 @@
+/* Scope file for Step 3 of the demo: showing imports */
 scoper for language ScopingExample
 
-isNamespace { Block, Function, VariableRef }
+isNamespace { Module, Block, Function }
 
-/* step 0: show the model without scoper */
-/* step 1a: add Block as Namespace and show what can be referenced in various places */
-/* step 1b: add Function as Namespace and show what can be referenced in various places */
-
-/* step 2: show imports */
 Block {
-    imports { self.imports; }
-}
-
-/* step 3: show alternatives */
-VariableRef {
-    alternatives {
-        owner().if(ComplexVarRef).block;
-        recursive owner().if(Block);
-    }
+    imports { self.importedBlocks; }
 }
