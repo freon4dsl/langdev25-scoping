@@ -1,4 +1,4 @@
-editor showPrivates
+editor privates
 
 Block {[
     block ${name} imports ${importedBlocks} {

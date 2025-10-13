@@ -74,7 +74,7 @@
     }
 
     // Stuff to type correctly
-    const param = box.findParam("noOpen")
+    const param = box.findParam("nrOpen")
     let openType: "single" | "multiple" = $state( "single")
     if (notNullOrUndefined(param)) {
         if (param === "single") openType = "single"
