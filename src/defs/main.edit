@@ -8,7 +8,7 @@ global {
 
 Module {[
     module ${name} {
-        globals: \[ ${globals horizontal separator[,]} \]
+        module variables: \[ ${globals horizontal separator[,]} \]
         ${blocks replace=ExternalAccordion nrOpen="multiple" conceptName="Block"}
         A QUALIFIED NAME: ${qualName}
     }

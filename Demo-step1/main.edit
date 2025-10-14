@@ -8,8 +8,8 @@ global {
 
 Module {[
     module ${name} {
-        globals: \[ ${globals horizontal separator[,]} \]
-        ${blocks replace=ExternalAccordion nrOpen="single" conceptName="Block"}
+        module variables: \[ ${globals horizontal separator[,]} \]
+        ${blocks replace=ExternalAccordion nrOpen="multiple" conceptName="Block"}
         A QUALIFIED NAME: ${qualName}
     }
     [fragment vis]
@@ -21,7 +21,7 @@ Block {[
     block ${name} imports ${importedBlocks} {
         block variables: \[ ${blockVariables horizontal separator[,]} \]
 
-        ${functions replace=ExternalAccordion nrOpen="single" conceptName="Function"}
+        ${functions replace=ExternalAccordion nrOpen="multiple" conceptName="Function"}
     }
 
     [fragment vis]
