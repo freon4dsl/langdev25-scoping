@@ -1,0 +1,51 @@
+language ScopingExample
+
+model ScopingExample {
+    units: Module[];
+}
+
+modelunit Module {
+    name: identifier;
+    globals: Variable[];
+    blocks: Block[];
+    check1: SimpleVarRef;
+    qualName: QualifiedRef;  /* needed for step 3 */
+}
+
+concept Block {
+    name: identifier;
+    blockVariables: Variable[];
+    functions: Function[];
+    reference importedBlocks: Block; /* needed for step 2 */
+    private privateVariables: Variable[]; /* needed for step 5 */
+    check1: SimpleVarRef;
+    reference check: Function;
+}
+
+concept Function {
+    name: identifier;
+    comment: string;
+    parameters: Variable[];
+    check1: SimpleVarRef;
+}
+
+concept Variable {
+    name: identifier;
+}
+
+expression QualifiedRef { /* needed for step 3 */
+    target: VariableRef;
+    reference block: Block;
+}
+
+abstract expression VariableRef { /* needed for step 3 */
+}
+
+expression FunctionRef base VariableRef { /* needed for step 3 */
+    target: VariableRef;
+    reference func: Function;
+}
+
+expression SimpleVarRef base VariableRef {
+    reference variable: Variable;
+}
