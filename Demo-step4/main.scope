@@ -7,10 +7,6 @@ Block {
     imports { self.importedBlocks; }
 }
 
-QualifiedRef {
-    imports { self.block; }
-}
-
 VariableRef {
     alternatives {
         owner().if(QualifiedRef).block;

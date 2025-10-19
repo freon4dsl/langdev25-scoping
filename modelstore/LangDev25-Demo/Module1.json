@@ -1,0 +1,1068 @@
+{
+   "serializationFormatVersion": "2023.1",
+   "languages": [
+      {
+         "key": "-key-ScopingExample",
+         "version": "2023.1"
+      }
+   ],
+   "nodes": [
+      {
+         "id": "ID-2",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Module"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-name"
+               },
+               "value": "Module1"
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-globals"
+               },
+               "children": [
+                  "ID-32",
+                  "ID-33",
+                  "ID-34"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-blocks"
+               },
+               "children": [
+                  "ID-5",
+                  "ID-11"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-check1"
+               },
+               "children": [
+                  "ID-3"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Module-qualName"
+               },
+               "children": [
+                  "ID-31"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": null
+      },
+      {
+         "id": "ID-32",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "modVar1"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-33",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "modVar2"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-34",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "modVar3"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-5",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Block"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-name"
+               },
+               "value": "Block1"
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-blockVariables"
+               },
+               "children": [
+                  "ID-7",
+                  "ID-8",
+                  "ID-9"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-functions"
+               },
+               "children": [
+                  "ID-26",
+                  "ID-46"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-privateVariables"
+               },
+               "children": []
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-check1"
+               },
+               "children": [
+                  "ID-6"
+               ]
+            }
+         ],
+         "references": [
+            {
+               "reference": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-importedBlocks"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "Block2",
+                     "reference": "ID-11"
+                  }
+               ]
+            },
+            {
+               "reference": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-check"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "FuncZ",
+                     "reference": "ID-26"
+                  }
+               ]
+            }
+         ],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-7",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "blockA"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-5"
+      },
+      {
+         "id": "ID-8",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "block1B"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-5"
+      },
+      {
+         "id": "ID-9",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "block1C"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-5"
+      },
+      {
+         "id": "ID-26",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Function"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-name"
+               },
+               "value": "FuncZ"
+            },
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-comment"
+               },
+               "value": ""
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-parameters"
+               },
+               "children": [
+                  "ID-28",
+                  "ID-29",
+                  "ID-30"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-check1"
+               },
+               "children": [
+                  "ID-27"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-5"
+      },
+      {
+         "id": "ID-28",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "Z"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-26"
+      },
+      {
+         "id": "ID-29",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "Y"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-26"
+      },
+      {
+         "id": "ID-30",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "X"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-26"
+      },
+      {
+         "id": "ID-27",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-26"
+      },
+      {
+         "id": "ID-46",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Function"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-name"
+               },
+               "value": "FuncW"
+            },
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-comment"
+               },
+               "value": ""
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-parameters"
+               },
+               "children": []
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-check1"
+               },
+               "children": [
+                  "ID-47"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-5"
+      },
+      {
+         "id": "ID-47",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-46"
+      },
+      {
+         "id": "ID-6",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [
+            {
+               "reference": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-SimpleVarRef-variable"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "blockA",
+                     "reference": "ID-7"
+                  }
+               ]
+            }
+         ],
+         "annotations": [],
+         "parent": "ID-5"
+      },
+      {
+         "id": "ID-11",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Block"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-name"
+               },
+               "value": "Block2"
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-blockVariables"
+               },
+               "children": [
+                  "ID-13",
+                  "ID-14",
+                  "ID-15"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-functions"
+               },
+               "children": [
+                  "ID-16",
+                  "ID-21"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-privateVariables"
+               },
+               "children": [
+                  "ID-4"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Block-check1"
+               },
+               "children": [
+                  "ID-12"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-13",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "blockA"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-11"
+      },
+      {
+         "id": "ID-14",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "block2B"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-11"
+      },
+      {
+         "id": "ID-15",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "block2C"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-11"
+      },
+      {
+         "id": "ID-16",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Function"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-name"
+               },
+               "value": "FuncA"
+            },
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-comment"
+               },
+               "value": ""
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-parameters"
+               },
+               "children": [
+                  "ID-18",
+                  "ID-19",
+                  "ID-20"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-check1"
+               },
+               "children": [
+                  "ID-17"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-11"
+      },
+      {
+         "id": "ID-18",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "A"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-16"
+      },
+      {
+         "id": "ID-19",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "B"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-16"
+      },
+      {
+         "id": "ID-20",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "C"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-16"
+      },
+      {
+         "id": "ID-17",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-16"
+      },
+      {
+         "id": "ID-21",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Function"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-name"
+               },
+               "value": "FuncB"
+            },
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-comment"
+               },
+               "value": ""
+            }
+         ],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-parameters"
+               },
+               "children": [
+                  "ID-23",
+                  "ID-24",
+                  "ID-25"
+               ]
+            },
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Function-check1"
+               },
+               "children": [
+                  "ID-22"
+               ]
+            }
+         ],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-11"
+      },
+      {
+         "id": "ID-23",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "D"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-21"
+      },
+      {
+         "id": "ID-24",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "E"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-21"
+      },
+      {
+         "id": "ID-25",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "F"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-21"
+      },
+      {
+         "id": "ID-22",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-21"
+      },
+      {
+         "id": "ID-4",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-Variable"
+         },
+         "properties": [
+            {
+               "property": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-Variable-name"
+               },
+               "value": "privaAAA"
+            }
+         ],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-11"
+      },
+      {
+         "id": "ID-12",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-11"
+      },
+      {
+         "id": "ID-3",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-31",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-QualifiedRef"
+         },
+         "properties": [],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-QualifiedRef-target"
+               },
+               "children": [
+                  "ID-36"
+               ]
+            }
+         ],
+         "references": [
+            {
+               "reference": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-QualifiedRef-block"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "Block1",
+                     "reference": "ID-5"
+                  }
+               ]
+            }
+         ],
+         "annotations": [],
+         "parent": "ID-2"
+      },
+      {
+         "id": "ID-36",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-FunctionRef"
+         },
+         "properties": [],
+         "containments": [
+            {
+               "containment": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-FunctionRef-target"
+               },
+               "children": [
+                  "ID-39"
+               ]
+            }
+         ],
+         "references": [
+            {
+               "reference": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-FunctionRef-func"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "FuncZ",
+                     "reference": "ID-26"
+                  }
+               ]
+            }
+         ],
+         "annotations": [],
+         "parent": "ID-31"
+      },
+      {
+         "id": "ID-39",
+         "classifier": {
+            "language": "-key-ScopingExample",
+            "version": "2023.1",
+            "key": "-key-SimpleVarRef"
+         },
+         "properties": [],
+         "containments": [],
+         "references": [
+            {
+               "reference": {
+                  "language": "-key-ScopingExample",
+                  "version": "2023.1",
+                  "key": "-key-SimpleVarRef-variable"
+               },
+               "targets": [
+                  {
+                     "resolveInfo": "Z",
+                     "reference": "ID-28"
+                  }
+               ]
+            }
+         ],
+         "annotations": [],
+         "parent": "ID-36"
+      }
+   ]
+}
