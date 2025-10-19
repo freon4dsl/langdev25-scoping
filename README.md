@@ -28,7 +28,7 @@ Note that anything that is saved in the editor will be stored in `~/modelstore`
 ### Start the Web Editor
 Open another (bash) terminal, and start the generated editor from it:
 ```bash
-npm run prepare-app
+npm run styles
 npm run dev
 ```
 The first (prepare-app) command only needs to be done once, and only
@@ -59,7 +59,7 @@ If you still have the webserver from the command `npm run dev` running , it will
 npm run dev
 ```
 
-You only need to re-run `npm run prepare-app`, when you change the theme or other forms of styling to the app.
+You only need to re-run `npm run styles`, when you change the theme or other forms of styling to the app.
 
 Repeat this process for the other demo steps.
 
